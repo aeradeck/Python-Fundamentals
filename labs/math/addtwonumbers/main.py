@@ -26,10 +26,13 @@ def main():
     a, b = line.split()
     # check to see if the data is split correctly
     print(f'{a=}, {b=}', file=sys.stderr)
-    # FIXME 2: convert string a into integer
-    # FIXME 3: convert string b into integer
-    # FIXME 4: add two numbers and store the result into ans variable
-    # FIXME 5: print the answer as shown in the sample output
-
+    # Fixed 2: convert string a into integer
+    a = int(a)
+    # Fixed 3: convert string b into integer
+    b = int(b)
+    # Fixed 4: add two numbers and store the result into ans variable
+    ans =a+b
+    # Fixed 5: print the answer as shown in the sample output
+    print(ans)
 
 main()  # call main function
